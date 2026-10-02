@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Get to know Yume Land, a cozy little shop for plushies and charming finds.">
+	<title>Yume Land | About</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<a class="skip-link" href="#main-content">Skip to main content</a>
+
+	<header class="site-header container-fluid about-header">
+		<a class="brand" href="index.html" aria-label="Yume Land home">夢.</a>
+		<nav class="site-nav" aria-label="Primary navigation">
+			<a class="site-nav-link" href="index.html">home</a>
+			<a class="site-nav-link" href="shop.html">shop</a>
+			<a class="site-nav-link active" href="about.html" aria-current="page">about</a>
+		</nav>
+		<button class="cart-link" type="button" aria-label="Shopping cart, 0 items" aria-haspopup="dialog" aria-controls="cart-modal">
+			<i class="bi bi-cart3 cart-icon" aria-hidden="true"></i>
+			<span class="cart-count" aria-hidden="true">0</span>
+		</button>
+	</header>
+
+	<main id="main-content" class="about-page">
+		<section class="about-intro" aria-labelledby="about-title">
+			<h1 id="about-title">ALL ABOUT YUME LAND</h1>
+		</section>
+
+		<section class="about-story" aria-labelledby="story-title">
+			<div class="about-feature" aria-hidden="true"></div>
+
+			<div class="about-timeline">
+				<h2 id="story-title">Our story</h2>
+				<article class="story-note">
+					<h3>Small joys, thoughtfully chosen</h3>
+				</article>
+				<article class="story-note">
+					<h3>Plushies for your cozy corner</h3>
+				</article>
+				<article class="story-note">
+					<h3>Finds from stories we love</h3>
+				</article>
+				<article class="story-note">
+					<h3>A happy place to discover</h3>
+				</article>
+			</div>
+		</section>
+	</main>
+	<div class="about-footer" aria-hidden="true"></div>
+
+	<div id="cart-modal" class="cart-modal" aria-hidden="true">
+		<section class="cart-panel" role="dialog" aria-modal="true" aria-labelledby="cart-title" tabindex="-1">
+			<header class="cart-panel-header">
+				<h2 id="cart-title">Your cart <span class="cart-item-count">(0)</span></h2>
+				<button class="cart-close" type="button" aria-label="Close cart">&times;</button>
+			</header>
+			<div class="cart-items" aria-live="polite"></div>
+			<p class="cart-empty">Your cart is waiting for something cozy.</p>
+			<footer class="cart-footer"><div class="cart-subtotal"><span>Subtotal</span><strong>$0.00</strong></div></footer>
+		</section>
+	</div>
+
+	<script src="js/cart.js"></script>
+</body>
+</html>
